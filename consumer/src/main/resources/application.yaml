@@ -11,5 +11,15 @@ eureka:
         register-with-eureka: true
         fetch-registry: true
 
+management:
+    endpoints:
+        web:
+            exposure:
+                include:
+                    - shutdown
+    endpoint:
+        shutdown:
+            access: unrestricted
+
 server:
     port: 8080
