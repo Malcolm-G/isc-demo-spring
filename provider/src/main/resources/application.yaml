@@ -4,7 +4,7 @@ spring:
 
 eureka:
     instance:
-        prefer-ip-address: false # When this service tries to make a call to a service registered on eureka, it will use the hostname stored on Eureka instead of the IP address.
+        prefer-ip-address: true # When this service tries to make a call to a service registered on eureka, it will use the IP address stored on Eureka instead of the hostname.
     client:
         service-url:
             default-zone: http://localhost:8761/eureka
