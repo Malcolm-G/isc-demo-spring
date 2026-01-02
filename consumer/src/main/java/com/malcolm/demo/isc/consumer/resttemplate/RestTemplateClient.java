@@ -9,7 +9,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor // Remember Spring requires the class to have only one constructor to autowire
 public class RestTemplateClient {
 
-	private static final String PROVIDER_URL = "http://localhost:8081";
+//	private static final String PROVIDER_URL = "http://localhost:8081";
+	private static final String PROVIDER_URL = "http://provider";
 	private final RestTemplate restTemplate;
 
 	public String getInstanceInfo() {
